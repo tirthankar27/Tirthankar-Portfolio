@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   <title>Tirthankar Ghosh</title>
   <!-- Font Awesome 6 (free) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -583,10 +583,9 @@
       .about-grid, .contact-grid { grid-template-columns: 1fr; }
       .profile-frame { width: 280px; height: 280px; }
     }
-    @media (max-width: 500px) {
-      .hero-text h1 { font-size: 2.2rem; }
+
+    @media (max-width: 600px) {
       .profile-frame { width: 240px; height: 240px; }
-      .section-title h2 { font-size: 2rem; }
     }
 
     /* simple mobile menu fallback (for demo we keep nav hidden on small screens) */
@@ -601,6 +600,174 @@
       border-radius: 30px;
       gap: 1.2rem;
       border: 1px solid var(--border-dim);
+    }
+
+    /* ===== FIXED RESPONSIVE FOR PHONES ===== */
+    @media (max-width: 600px) {
+      .container {
+        padding: 0 1rem;
+        width: 100%;
+        overflow-x: hidden;
+      }
+      
+      body {
+        overflow-x: hidden;
+        width: 100%;
+      }
+      
+      .hero-content {
+        gap: 1.5rem;
+      }
+      
+      .hero-text h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+      
+      .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .profile-frame {
+        width: 220px;
+        height: 220px;
+      }
+      
+      .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
+      
+      .section-title h2 {
+        font-size: 1.8rem;
+      }
+      
+      .bio-card, .edu-card {
+        padding: 1.5rem;
+      }
+      
+      .bio-card h3, .edu-card h3 {
+        font-size: 1.5rem;
+      }
+      
+      .info-list li {
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+      
+      .info-list li strong {
+        width: auto;
+      }
+      
+      .skill-card {
+        padding: 1.5rem;
+      }
+      
+      .skill-card h3 {
+        font-size: 1.3rem;
+      }
+      
+      .timeline-item {
+        padding: 1.5rem;
+      }
+      
+      .timeline-item h3 {
+        font-size: 1.2rem;
+        word-break: break-word;
+      }
+      
+      .project-card {
+        padding: 1.5rem;
+      }
+      
+      .project-card h3 {
+        font-size: 1.3rem;
+      }
+      
+      .contact-item {
+        padding: 1rem 1.2rem;
+        gap: 1rem;
+      }
+      
+      .contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+      }
+      
+      .contact-item h4 {
+        font-size: 1rem;
+      }
+      
+      .contact-item p, .contact-item a {
+        font-size: 0.9rem;
+        word-break: break-all;
+      }
+      
+      .contact-form {
+        padding: 1.5rem;
+      }
+      
+      .input-field {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+      }
+      
+      .submit-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
+      
+      .footer-social a {
+        font-size: 1.4rem;
+      }
+      
+      /* Fix for overflowing elements */
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .btn-outline {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.9rem;
+      }
+      
+      /* Fix for long words/URLs */
+      a {
+        word-break: break-word;
+      }
+      
+      /* Adjust timeline icons if they overflow */
+      .timeline-item h3 i {
+        font-size: 1rem;
+      }
+    }
+
+    /* Extra small devices */
+    @media (max-width: 380px) {
+      .profile-frame {
+        width: 180px;
+        height: 180px;
+      }
+      
+      .hero-text h1 {
+        font-size: 1.8rem;
+      }
+      
+      .contact-item {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .contact-icon {
+        margin-bottom: 0.5rem;
+      }
     }
   </style>
 </head>
