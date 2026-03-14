@@ -576,6 +576,200 @@
       visibility: visible;
     }
 
+        /* ===== BUSINESS SECTION - REDESIGNED ===== */
+    .business {
+      padding: 4rem 0 5rem;
+      position: relative;
+    }
+
+    .business-card {
+      background: linear-gradient(135deg, #2a1e3c 0%, #1a1f2f 100%);
+      border-radius: 3rem;
+      padding: 3.5rem 3rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 30px 50px -15px rgba(0,0,0,0.5);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .business-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(139, 92, 246, 0.4);
+      box-shadow: 0 35px 55px -15px rgba(139, 92, 246, 0.3);
+    }
+
+    .business-content {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .business-badge {
+      display: inline-block;
+      background: rgba(139, 92, 246, 0.2);
+      color: var(--primary-lighter);
+      padding: 0.5rem 1.5rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      backdrop-filter: blur(5px);
+    }
+
+    .business-content h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      background: linear-gradient(145deg, #fff, var(--primary-lighter));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .business-content p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .business-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2.5rem;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border: none;
+      border-radius: 60px;
+      color: #000;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 15px 25px -8px rgba(139, 92, 246, 0.4);
+      margin-bottom: 3rem;
+    }
+
+    .business-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 30px -5px rgba(139, 92, 246, 0.6);
+      opacity: 0.95;
+    }
+
+    .business-stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(145deg, var(--primary-lighter), #fff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Decorative circles */
+    .business-decoration {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(139, 92, 246, 0.3), transparent 70%);
+      filter: blur(40px);
+    }
+
+    .circle-1 {
+      width: 300px;
+      height: 300px;
+      top: -100px;
+      right: -100px;
+      background: rgba(139, 92, 246, 0.2);
+    }
+
+    .circle-2 {
+      width: 250px;
+      height: 250px;
+      bottom: -80px;
+      left: -80px;
+      background: rgba(245, 158, 11, 0.15);
+    }
+
+    .circle-3 {
+      width: 200px;
+      height: 200px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(139, 92, 246, 0.1);
+      filter: blur(60px);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .business-card {
+        padding: 2.5rem 1.5rem;
+        border-radius: 2rem;
+      }
+      
+      .business-content h2 {
+        font-size: 2rem;
+      }
+      
+      .business-content p {
+        font-size: 1rem;
+      }
+      
+      .business-stats {
+        gap: 2rem;
+      }
+      
+      .stat-number {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .business-stats {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .business-btn {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+      }
+    }
+
     /* ===== responsive ===== */
     @media (max-width: 800px) {
       .container { padding: 0 1.5rem; }
@@ -903,6 +1097,39 @@
       </div>
     </section>
   </main>
+  <section class="business">
+    <div class="container">
+      <div class="business-card">
+        <div class="business-content">
+          <span class="business-badge">📬 Let's Connect</span>
+          <h2>Have a project in mind?</h2>
+          <p>Whether it's building a full-stack application, a data-driven solution, or just a tech chat — I'm always open to discussing new opportunities and collaborations.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSYvuVUDH9eEcJfWPZNaekRexuWWs6udnfdQNF2G9SnhsyuA/viewform?usp=dialog" target="_blank" class="business-btn">
+            <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>Start a Conversation
+          </a>
+          <div class="business-stats">
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">24h</span>
+              <span class="stat-label">Avg. Response</span>
+            </div>
+          </div>
+        </div>
+        <div class="business-decoration">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
