@@ -459,6 +459,15 @@
       margin-top: auto;
       align-self: flex-start;
     }
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: auto;
+    }
+    .project-links .btn-outline {
+      margin-top: 0;
+    }
     .btn-outline {
       display: inline-block;
       padding: 0.6rem 1.6rem;
@@ -903,6 +912,7 @@
             <ul class="skill-list">
               <li><i class="fas fa-angle-right"></i> Python</li>
               <li><i class="fas fa-angle-right"></i> C++</li>
+              <li><i class="fas fa-angle-right"></i> Java</li>
               <li><i class="fas fa-angle-right"></i> JavaScript</li>
               <li><i class="fas fa-angle-right"></i> TypeScript</li>
               <li><i class="fas fa-angle-right"></i> SQL</li>
@@ -943,6 +953,7 @@
               <li><i class="fas fa-angle-right"></i> Scikit-learn</li>
               <li><i class="fas fa-angle-right"></i> TensorFlow, PyTorch</li>
               <li><i class="fas fa-angle-right"></i> Pandas, NumPy</li>
+              <li><i class="fas fa-angle-right"></i> OpenCLIP, YOLO, EasyOCR</li>
               <li><i class="fas fa-angle-right"></i> Tableau</li>
             </ul>
           </div>
@@ -1035,6 +1046,25 @@
         <div class="section-title"><h2>Featured projects</h2></div>
         <div class="projects-grid">
           <div class="project-card">
+            <h3>BookMyTrip</h3>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Bootstrap</span>
+              <span class="project-tag">Gemini AI</span>
+            </div>
+            <ul>
+              <li>Engineered a full-stack travel booking platform featuring bus reservations, hotel bookings, travel packages, role-based authentication, agency onboarding, and admin approval workflows, supported by 20+ REST APIs and 8+ MongoDB data models.</li>
+              <li>Integrated a Gemini AI-powered travel assistant for destination recommendations, hotel/package discovery, trip planning, and route queries; built responsive glassmorphism-based UI with real-time weather integration.</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/tirthankar27/BookMyTrip" target="_blank" class="btn-outline">Code</a>
+              <a href="https://book-my-trip-9wmq.vercel.app/" target="_blank" class="btn-outline">Live</a>
+            </div>
+          </div>
+          <div class="project-card">
             <h3>RetailIQ</h3>
             <div class="project-tags">
               <span class="project-tag">FastAPI</span>
@@ -1056,33 +1086,37 @@
             <a href="https://github.com/tirthankar27/RetailIQ" target="_blank" class="btn-outline">Code</a>
           </div>
           <div class="project-card">
-            <h3>BookMyTrip</h3>
+            <h3>Kubo — GPT-Style Chat Model</h3>
             <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">Node.js</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">MongoDB</span>
-              <span class="project-tag">Bootstrap</span>
-              <span class="project-tag">Gemini AI</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">PyTorch</span>
+              <span class="project-tag">Gradio</span>
+              <span class="project-tag">FAISS</span>
+              <span class="project-tag">BM25</span>
+              <span class="project-tag">RAG</span>
             </div>
             <ul>
-              <li>Engineered a full-stack travel booking platform featuring bus reservations, hotel bookings, travel packages, role-based authentication, agency onboarding, and admin approval workflows, supported by 20+ REST APIs and 8+ MongoDB data models.</li>
-              <li>Integrated a Gemini AI-powered travel assistant for destination recommendations, hotel/package discovery, trip planning, and route queries; built responsive glassmorphism-based UI with real-time weather integration.</li>
+              <li>Built a 30M-parameter GPT-style transformer from scratch in PyTorch.</li>
+              <li>Developed a RAG chat agent using hybrid retrieval (FAISS + BM25), cross-encoder reranking, and grounded answers with source citations.</li>
             </ul>
-            <a href="https://github.com/tirthankar27/BookMyTrip" target="_blank" class="btn-outline">Code</a>
+            <a href="https://github.com/tirthankar27/Kubo" target="_blank" class="btn-outline">Code</a>
           </div>
           <div class="project-card">
             <h3>Mini Google Lens</h3>
             <div class="project-tags">
               <span class="project-tag">Python</span>
-              <span class="project-tag">TensorFlow</span>
+              <span class="project-tag">FastAPI</span>
               <span class="project-tag">PyTorch</span>
+              <span class="project-tag">OpenCLIP</span>
+              <span class="project-tag">BLIP</span>
+              <span class="project-tag">Qwen</span>
+              <span class="project-tag">OWLv2</span>
+              <span class="project-tag">EasyOCR</span>
               <span class="project-tag">ResNet50</span>
-              <span class="project-tag">Computer Vision</span>
             </div>
             <ul>
-              <li>Fine-tuned a pretrained ResNet50 model on the Caltech-256 dataset for image classification, achieving 70% validation accuracy across 256 object categories.</li>
-              <li>Implemented an image recognition system that processes user-uploaded images and predicts the most likely object class using transfer learning and deep feature extraction.</li>
+              <li>Developed a multimodal AI-powered visual search engine integrating OpenCLIP, BLIP, Qwen, EasyOCR, OWLv2, and a fine-tuned ResNet50 to perform scene understanding, image captioning, OCR, object localization, and semantic reasoning.</li>
+              <li>Built CLIP-based similar image retrieval, web image search, and product search integration, enabling Google Lens-style visual search beyond the limitations of Caltech-256 while achieving 70% classification accuracy on the benchmark dataset.</li>
             </ul>
             <a href="https://github.com/tirthankar27/Mini-Google-Lens" target="_blank" class="btn-outline">Code</a>
           </div>
